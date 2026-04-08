@@ -11,5 +11,18 @@
       "name": "Fabio",
       "photo": "images/monitors/fabio.jpg"
     }
+  },
+  {
+    "name": "Spots",
+    "duration": "30 min",
+    "players": "De 1 a 4 jogadores",
+    "bestWith": "Melhor em: 3 ou 4",
+    "description": "Role os dados e encaixe-os nos espaços certos das suas cartas de cachorro. Force a sorte relançando — mas cuidado: dados que não encaixam são enterrados no quintal. Enterre demais e você perde tudo. Complete 6 cachorros para vencer!",
+    "heroImage": "images/hero/spots-hero.jpg",
+    "boxArt": "images/boxart/spots.jpg",
+    "monitor": {
+      "name": "Fabio",
+      "photo": "images/monitors/fabio.jpg"
+    }
   }
 ]
