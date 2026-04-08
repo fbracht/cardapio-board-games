@@ -151,7 +151,7 @@ body {
 
 .slide__monitor-cards {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -160,10 +160,6 @@ body {
 .slide__monitor-or {
     font-weight: 700;
     opacity: 0.55;
-}
-
-.slide__monitor-name {
-    align-self: baseline;
 }
 
 .slide__monitor-card {
