@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Truffle Shuffle",
+    "duration": "20 a 40 min",
+    "players": "De 2 a 4 jogadores",
+    "bestWith": "Melhor em: 2",
+    "description": "Escolha os melhores bombons para montar conjuntos valiosos e ganhar mais pontos em moedas de chocolate.",
+    "heroImage": "images/hero/truffle-shuffle.jpg",
+    "boxArt": "images/boxart/truffle-shuffle.jpg",
+    "monitor": {
+      "name": "Fabio",
+      "photo": "images/monitors/fabio.jpg"
+    }
+  }
+]
