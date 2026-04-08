@@ -60,14 +60,16 @@ function createSlide(game, index) {
 
   // Monitor section
   const monitor = el('div', 'slide__monitor');
+
+  const monitorPrefix = el('span', 'slide__monitor-prefix');
+  monitorPrefix.textContent = 'Seu monitor para este jogo será:';
+  monitor.appendChild(monitorPrefix);
+
   monitor.appendChild(lazyImg('slide__monitor-photo', `Foto de ${game.monitor.name}`, game.monitor.photo));
 
-  const monitorLabel = el('span');
-  monitorLabel.textContent = 'Seu monitor para este jogo será: ';
-  const monitorName = el('strong');
+  const monitorName = el('strong', 'slide__monitor-name');
   monitorName.textContent = game.monitor.name;
-  monitorLabel.appendChild(monitorName);
-  monitor.appendChild(monitorLabel);
+  monitor.appendChild(monitorName);
 
   panel.appendChild(monitor);
   slide.appendChild(panel);
