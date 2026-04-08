@@ -149,6 +149,19 @@ body {
     text-align: center;
 }
 
+.slide__monitor-cards {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.slide__monitor-or {
+    font-weight: 700;
+    opacity: 0.55;
+}
+
 .slide__monitor-card {
     display: inline-flex;
     align-items: center;

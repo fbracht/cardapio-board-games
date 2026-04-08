@@ -65,13 +65,21 @@ function createSlide(game, index) {
   monitorPrefix.textContent = 'Seu monitor para este jogo será:';
   monitor.appendChild(monitorPrefix);
 
-  const monitorCard = el('div', 'slide__monitor-card');
-  monitorCard.appendChild(lazyImg('slide__monitor-photo', `Foto de ${game.monitor.name}`, game.monitor.photo));
-
-  const monitorName = el('strong', 'slide__monitor-name');
-  monitorName.textContent = game.monitor.name;
-  monitorCard.appendChild(monitorName);
-  monitor.appendChild(monitorCard);
+  const monitorCards = el('div', 'slide__monitor-cards');
+  game.monitors.forEach((m, i) => {
+    if (i > 0) {
+      const or = el('span', 'slide__monitor-or');
+      or.textContent = 'ou';
+      monitorCards.appendChild(or);
+    }
+    const card = el('div', 'slide__monitor-card');
+    card.appendChild(lazyImg('slide__monitor-photo', `Foto de ${m.name}`, m.photo));
+    const name = el('strong', 'slide__monitor-name');
+    name.textContent = m.name;
+    card.appendChild(name);
+    monitorCards.appendChild(card);
+  });
+  monitor.appendChild(monitorCards);
 
   panel.appendChild(monitor);
   slide.appendChild(panel);

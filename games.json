@@ -7,10 +7,9 @@
     "description": "Escolha os melhores bombons para montar conjuntos valiosos e ganhar mais pontos em moedas de chocolate.",
     "heroImage": "images/hero/truffle-shuffle-hero.webp",
     "boxArt": "images/boxart/truffle-shuffle.webp",
-    "monitor": {
-      "name": "Fabio",
-      "photo": "images/monitors/fabio.jpg"
-    }
+    "monitors": [
+      { "name": "Fabio", "photo": "images/monitors/fabio.jpg" }
+    ]
   },
   {
     "name": "Spots",
@@ -20,9 +19,9 @@
     "description": "Role os dados e encaixe-os nos espaços certos das suas cartas de cachorro. Force a sorte relançando — mas cuidado: dados que não encaixam são enterrados no quintal. Enterre demais e você perde tudo. Complete 6 cachorros para vencer!",
     "heroImage": "images/hero/spots-hero.jpg",
     "boxArt": "images/boxart/spots.jpg",
-    "monitor": {
-      "name": "Fabio",
-      "photo": "images/monitors/fabio.jpg"
-    }
+    "monitors": [
+      { "name": "Ronie", "photo": "images/monitors/ronie.jpg" },
+      { "name": "Fabio", "photo": "images/monitors/fabio.jpg" }
+    ]
   }
 ]
