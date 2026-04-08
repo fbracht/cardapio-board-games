@@ -29,7 +29,6 @@ html, body {
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
 }
 
@@ -163,7 +162,8 @@ html, body {
   border-radius: 50%;
   border: 1.5px solid rgba(255,255,255,0.7);
   background: transparent;
-  transition: all 0.25s ease;
+  transition: width 0.25s ease, height 0.25s ease,
+              background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .dot--active {

@@ -30,7 +30,7 @@ function createSlide(game, index) {
   panel.appendChild(lazyImg('slide__boxart', `Capa de ${game.name}`, game.boxArt));
 
   // Title
-  const title = el('h1', 'slide__title');
+  const title = el('h2', 'slide__title');
   title.textContent = game.name;
   panel.appendChild(title);
 
@@ -109,12 +109,11 @@ function loadSlideImages(slide) {
 }
 
 /** Progressive loading: slide 1 first, then sequentially */
-async function loadSequentially(slides) {
-  const container = document.getElementById('slides');
-
+async function loadSequentially(slides, container) {
   for (let i = 0; i < slides.length; i++) {
     const slide = slides[i];
     const loading = slide.querySelector('.slide__loading');
+    if (!loading) continue;
 
     loading.classList.add('is-visible');
     await loadSlideImages(slide);
@@ -129,8 +128,20 @@ async function loadSequentially(slides) {
 
 /** Entry point */
 async function init() {
-  const res = await fetch('games.json');
-  const games = await res.json();
+  let games;
+  try {
+    const res = await fetch('games.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    games = await res.json();
+  } catch (err) {
+    console.error('Falha ao carregar o cardápio:', err);
+    const container = document.getElementById('slides');
+    const msg = document.createElement('p');
+    msg.textContent = 'Não foi possível carregar o cardápio. Tente recarregar a página.';
+    msg.style.cssText = 'position:fixed;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;font-family:sans-serif;color:#fff;background:#000;';
+    container.appendChild(msg);
+    return;
+  }
 
   const container = document.getElementById('slides');
   const dotsContainer = document.getElementById('dots');
@@ -146,20 +157,19 @@ async function init() {
 
   // IntersectionObserver to update active dot
   const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const i = Number(entry.target.dataset.index);
-        dots.forEach((dot, di) => {
-          dot.classList.toggle('dot--active', di === i);
-        });
-      }
-    });
+    const best = entries.reduce((a, b) =>
+      a.intersectionRatio >= b.intersectionRatio ? a : b
+    );
+    if (best.isIntersecting) {
+      const i = Number(best.target.dataset.index);
+      dots.forEach((dot, di) => dot.classList.toggle('dot--active', di === i));
+    }
   }, { threshold: 0.5 });
 
   slides.forEach(slide => observer.observe(slide));
 
   // Start progressive loading
-  await loadSequentially(slides);
+  await loadSequentially(slides, container);
 }
 
-init();
+init().catch(err => console.error('Erro inesperado:', err));
