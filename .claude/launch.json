@@ -3,9 +3,9 @@
   "configurations": [
     {
       "name": "Python HTTP Server",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8080"],
-      "port": 8080
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "python3 -m http.server $PORT"],
+      "autoPort": true
     },
     {
       "name": "npx serve",
