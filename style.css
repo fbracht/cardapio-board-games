@@ -162,6 +162,10 @@ body {
     opacity: 0.55;
 }
 
+.slide__monitor-name {
+    align-self: baseline;
+}
+
 .slide__monitor-card {
     display: inline-flex;
     align-items: center;
