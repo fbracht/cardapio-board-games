@@ -7,7 +7,10 @@
     "description": "Construa uma das sete maravilhas do mundo antigo antes dos seus rivais! A cada turno, escolha uma das três cartas disponíveis para coletar recursos, avançar na ciência, fortalecer o exército ou acumular pontos de vitória. O jogo termina quando alguém terminar sua construção, mas quem será que ganha?",
     "heroImage": "images/hero/7-wonders-arquitetos.webp",
     "boxArt": "images/boxart/7-wonders-arquitetos.jpg",
-    "monitors": [{ "name": "Fabio", "photo": "images/monitors/fabio.jpg" }]
+    "monitors": [
+      { "name": "Fabio", "photo": "images/monitors/fabio.jpg" },
+      { "name": "Ronie", "photo": "images/monitors/ronie.jpg" }
+    ]
   },
   {
     "name": "Canvas",
@@ -77,7 +80,10 @@
     "description": "A cada turno, uma carta numerada é revelada. Você nunca quer a carta, porque cartas valem pontos e ganha quem tiver MENOS pontos no final. Mas, para passar, você precisa colocar uma ficha nela, e elas não são infinitas. Quem pegar a carta, pega também as fichas nela, e as fichas abatem dos seus pontos no final. E aí, vai pegar ou passar?",
     "heroImage": "images/hero/no-thanks.jpeg",
     "boxArt": "images/boxart/no-thanks.png",
-    "monitors": [{ "name": "Fabio", "photo": "images/monitors/fabio.jpg" }]
+    "monitors": [
+      { "name": "Fabio", "photo": "images/monitors/fabio.jpg" },
+      { "name": "Ronie", "photo": "images/monitors/ronie.jpg" }
+    ]
   },
   {
     "name": "Spots",
@@ -100,7 +106,10 @@
     "description": "No rodízio de sushi mais frenético que você já viu, as cartas circulam entre os jogadores e cada um escolhe uma por vez para montar a melhor refeição. Sashimi vale muito, mas só se você fechar o trio completo. Tempurá só pontua em pares. E não esqueça: o pudim no final da partida pode virar o jogo inteiro.",
     "heroImage": "images/hero/sushi-go.jpeg",
     "boxArt": "images/boxart/sushi-go.jpg",
-    "monitors": [{ "name": "Fabio", "photo": "images/monitors/fabio.jpg" }]
+    "monitors": [
+      { "name": "Ronie", "photo": "images/monitors/ronie.jpg" },
+      { "name": "Fabio", "photo": "images/monitors/fabio.jpg" }
+    ]
   },
   {
     "name": "Trio",
