@@ -40,7 +40,10 @@
     "description": "Uma imagem vale mais que mil palavras, mas você precisa ser sutil. A cada rodada, um jogador é o narrador: ele escolhe uma carta e dá uma pista sobre ela. Todos os outros tentam enviar cartas que combinem com essa pista para confundir os demais. Se todos — ou ninguém — acertarem sua carta, você não ganha nada! O segredo é criar pistas enigmáticas na medida certa para que apenas alguns descubram a verdade.",
     "heroImage": "images/hero/dixit-odyssey.jpeg",
     "boxArt": "images/boxart/dixit-odyssey.webp",
-    "monitors": [{ "name": "Ronie", "photo": "images/monitors/ronie.jpg" }]
+    "monitors": [
+      { "name": "Ronie", "photo": "images/monitors/ronie.jpg" },
+      { "name": "Séfora", "photo": "images/monitors/sefora.jpg" }
+    ]
   },
   {
     "name": "Dobble",
@@ -50,7 +53,10 @@
     "description": "Seus olhos são rápidos o suficiente? Cada carta tem apenas um símbolo em comum com qualquer outra do baralho. Seja o primeiro a encontrar o par e gritar o nome dele para vencer. É um desafio frenético de reflexos e percepção visual onde ninguém fica parado.",
     "heroImage": "images/hero/dobble.jpeg",
     "boxArt": "images/boxart/dobble.webp",
-    "monitors": [{ "name": "Ronie", "photo": "images/monitors/ronie.jpg" }]
+    "monitors": [
+      { "name": "Ronie", "photo": "images/monitors/ronie.jpg" },
+      { "name": "Séfora", "photo": "images/monitors/sefora.jpg" }
+    ]
   },
   {
     "name": "É Top? (Superinteressante)",
@@ -119,7 +125,10 @@
     "description": "Será que você tem boa memória... ou só sorte? O objetivo é simples: encontrar três cartas iguais para formar um \"trio\". Você pode pedir cartas da mão dos adversários ou revelar as da mesa, mas precisa achar os números idênticos em sequência. Um jogo de dedução rápido e muito divertido.",
     "heroImage": "images/hero/trio.jpeg",
     "boxArt": "images/boxart/trio.webp",
-    "monitors": [{ "name": "Ronie", "photo": "images/monitors/ronie.jpg" }]
+    "monitors": [
+      { "name": "Ronie", "photo": "images/monitors/ronie.jpg" },
+      { "name": "Séfora", "photo": "images/monitors/sefora.jpg" }
+    ]
   },
   {
     "name": "Truffle Shuffle",

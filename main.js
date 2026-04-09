@@ -29,9 +29,17 @@ function createSlide(game, index) {
   // Box art (float right)
   panel.appendChild(lazyImg('slide__boxart', `Capa de ${game.name}`, game.boxArt));
 
-  // Title
+  // Title (wrap parenthetical suffix in a smaller span, e.g. "(Superinteressante)")
   const title = el('h2', 'slide__title');
-  title.textContent = game.name;
+  const nameMatch = game.name.match(/^(.*?)(\s*\(.*\))$/);
+  if (nameMatch) {
+    title.appendChild(document.createTextNode(nameMatch[1]));
+    const suffix = el('span', 'slide__title-suffix');
+    suffix.textContent = nameMatch[2];
+    title.appendChild(suffix);
+  } else {
+    title.textContent = game.name;
+  }
   panel.appendChild(title);
 
   // Meta: duration and players

@@ -113,6 +113,14 @@ body {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
+.slide__title-suffix {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: -0.2em;
+}
+
 /* ── Meta (tempo + jogadores) ── */
 .slide__meta {
     font-size: 0.85rem;
