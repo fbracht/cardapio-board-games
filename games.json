@@ -99,7 +99,10 @@
     "description": "Inspire-se nas deslumbrantes janelas de vitral da Sagrada Família para criar sua própria obra-prima. A cada turno, você drafta dados coloridos e os posiciona na sua grade, respeitando restrições de cor e valor — dados iguais não podem ser adjacentes. Simples de aprender, mas incrivelmente satisfatório de dominar.",
     "heroImage": "images/hero/sagrada.jpeg",
     "boxArt": "images/boxart/sagrada.jpeg",
-    "monitors": []
+    "monitors": [
+      { "name": "Ronie", "photo": "images/monitors/ronie.jpg" },
+      { "name": "Fabio", "photo": "images/monitors/fabio.jpg" }
+    ]
   },
   {
     "name": "Spots",
