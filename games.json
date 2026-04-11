@@ -99,6 +99,16 @@
     "monitors": [{ "name": "Ronie", "photo": "images/monitors/ronie.jpg" }]
   },
   {
+    "name": "Lacuna",
+    "duration": "20–30 min",
+    "players": "2 jogadores",
+    "bestWith": "Melhor em: 2",
+    "description": "Em uma noite estrelada, duas fadas colhem flores à beira de um lago encantado. A cada turno, escolha uma carta para mover sua fada pelo caminho ou coletar as flores que estão sob seus pés. Simples de aprender, mas cada decisão importa: as flores que você deixar para trás podem ser exatamente o que seu oponente precisava.",
+    "heroImage": "",
+    "boxArt": "images/boxart/lacuna.jpg",
+    "monitors": [{ "name": "Fabio", "photo": "images/monitors/fabio.jpg" }]
+  },
+  {
     "name": "No Thanks!",
     "duration": "20 min",
     "players": "De 3 a 7 jogadores",
@@ -120,6 +130,16 @@
     "heroImage": "images/hero/senhor-dos-aneis-duelo.jpeg",
     "boxArt": "images/boxart/senhor-dos-aneis-duelo.jpeg",
     "monitors": [{ "name": "Jorge", "photo": "images/monitors/jorge.jpg" }]
+  },
+  {
+    "name": "Project L",
+    "duration": "20–40 min",
+    "players": "De 1 a 4 jogadores",
+    "bestWith": "Melhor em: 2 ou 3",
+    "description": "Encaixe peças de acrílico coloridas em quebra-cabeças para completá-los e ganhar recompensas. Cada puzzle concluído te dá peças maiores e mais versáteis para usar nas próximas rodadas. O motor vai crescendo enquanto você tenta completar o máximo de puzzles antes dos adversários — rápido, satisfatório e visualmente lindo.",
+    "heroImage": "",
+    "boxArt": "images/boxart/project-l.png",
+    "monitors": [{ "name": "Fabio", "photo": "images/monitors/fabio.jpg" }]
   },
   {
     "name": "Sagrada",
